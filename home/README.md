@@ -43,7 +43,7 @@ Switch to the partner view to see adaptive content in PayAdmin:
 {% endif %}
 
 {% if visitor.claims.unsigned.persona %}
-<i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are viewing as <code class="expression">visitor.claims.unsigned.persona</code>. [<mark style="color:$primary;">Reset</mark>](https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/)
+<i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are viewing as <code class="expression">visitor.claims.unsigned.persona</code>. [<mark style="color:$primary;">Reset</mark>](https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=)
 {% endif %}
 {% endhint %}
 {% endcolumn %}
@@ -118,6 +118,6 @@ Use **PayAdmin** to set roles, validate funding, review exception queues, and co
 
 {% step %}
 ### Demo adaptive content
-Open the PayAdmin persona URL and compare it to the default view. The same pages reveal admin-specific guidance without duplicating the entire support center.
+Open the partner URL and compare it to the default view. The same pages reveal partner-specific guidance without duplicating the entire support center.
 {% endstep %}
 {% endstepper %}
