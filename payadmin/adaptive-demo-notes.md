@@ -8,9 +8,9 @@ icon: wand-magic-sparkles
 Use these URLs after the site is published:
 
 * Default view: no claims.
-* Worker view: `?visitor.persona=worker`
-* PayAdmin view: `?visitor.persona=payadmin`
-* Partner view: `?visitor.persona=partner`
+* Worker view: `https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=worker`
+* PayAdmin view: `https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=payadmin`
+* Partner view: `https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=partner`
 
 ## What changes
 

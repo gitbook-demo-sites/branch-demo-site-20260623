@@ -30,7 +30,7 @@ Use this runbook when a worker reports a missing paycheck, tip, mileage payout, 
 {% endtab %}
 {% endtabs %}
 
-{% if visitor.claims.persona === "payadmin" %}
+{% if visitor.claims.unsigned.persona === "payadmin" %}
 {% hint style="warning" icon="lock" %}
 **Admin-only checklist**
 
@@ -38,7 +38,7 @@ Before reissuing funds, check duplicate payout risk, funding balance, previous r
 {% endhint %}
 {% endif %}
 
-{% if visitor.claims.persona === "partner" %}
+{% if visitor.claims.unsigned.persona === "partner" %}
 {% hint style="info" icon="webhook" %}
 **Partner integration note**
 
