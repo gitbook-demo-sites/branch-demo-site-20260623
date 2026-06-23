@@ -14,7 +14,7 @@ PayAdmin access should follow least privilege. Operators should have only the pe
 | Finance admin | Funding and settlement visibility | Monitor funding state, reconcile batches |
 | Compliance admin | Restricted review and audit | Fraud, dispute, and policy escalations |
 
-{% if visitor.claims.unsigned.persona === "payadmin" %}
+{% if visitor.claims.persona === "payadmin" %}
 {% hint style="warning" icon="shield-halved" %}
 **Admin-only control**
 

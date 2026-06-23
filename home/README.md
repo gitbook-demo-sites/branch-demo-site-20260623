@@ -34,20 +34,20 @@ Branch delivers faster, more flexible options for businesses to pay their worker
 
 This Branch demo uses the public support portal as the customer-help source, adds a PayAdmin operator section, and includes an OpenAPI-backed dummy API reference for partner and embedded-finance conversations.
 
-{% if !visitor.claims.unsigned.persona %}
+{% if !visitor.claims.persona %}
 Try a persona to see adaptive content in PayAdmin:
 
-<a href="?visitor.unsigned.persona=worker" class="button secondary" data-icon="user">Worker</a> <a href="?visitor.unsigned.persona=payadmin" class="button secondary" data-icon="user-gear">PayAdmin</a> <a href="?visitor.unsigned.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a>
+<a href="?visitor.persona=worker" class="button secondary" data-icon="user">Worker</a> <a href="?visitor.persona=payadmin" class="button secondary" data-icon="user-gear">PayAdmin</a> <a href="?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a>
 {% endif %}
 
-{% if visitor.claims.unsigned.persona %}
-<i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are viewing as <code class="expression">visitor.claims.unsigned.persona</code>. [<mark style="color:$primary;">Reset</mark>](?)
+{% if visitor.claims.persona %}
+<i class="fa-id-card-clip" style="color:$info;">:id-card-clip:</i> You are viewing as <code class="expression">visitor.claims.persona</code>. [<mark style="color:$primary;">Reset</mark>](?)
 {% endif %}
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
 
-{% if visitor.claims.unsigned.persona %}
+{% if visitor.claims.persona %}
 
 ***
 
@@ -55,7 +55,7 @@ Try a persona to see adaptive content in PayAdmin:
 
 {% endif %}
 
-{% if visitor.claims.unsigned.persona === "worker" %}
+{% if visitor.claims.persona === "worker" %}
 {% hint style="info" icon="mobile-screen-button" %}
 **Worker view.** Start with account access, card actions, direct deposit, transfers, advances, and dispute support.
 {% endhint %}
@@ -67,7 +67,7 @@ Try a persona to see adaptive content in PayAdmin:
 </tbody></table>
 {% endif %}
 
-{% if visitor.claims.unsigned.persona === "payadmin" %}
+{% if visitor.claims.persona === "payadmin" %}
 {% hint style="info" icon="user-gear" %}
 **PayAdmin view.** Prioritize payout exceptions, worker lookup, funding status, compliance review, and support handoffs.
 {% endhint %}
@@ -79,7 +79,7 @@ Try a persona to see adaptive content in PayAdmin:
 </tbody></table>
 {% endif %}
 
-{% if visitor.claims.unsigned.persona === "partner" %}
+{% if visitor.claims.persona === "partner" %}
 {% hint style="info" icon="handshake-angle" %}
 **Partner view.** Focus on embedded payouts, onboarding, API credentials, webhooks, and exception callbacks.
 {% endhint %}

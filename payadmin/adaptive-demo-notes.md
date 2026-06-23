@@ -8,9 +8,9 @@ icon: wand-magic-sparkles
 Use these URLs after the site is published:
 
 * Default view: no claims.
-* Worker view: `?visitor.unsigned.persona=worker`
-* PayAdmin view: `?visitor.unsigned.persona=payadmin`
-* Partner view: `?visitor.unsigned.persona=partner`
+* Worker view: `?visitor.persona=worker`
+* PayAdmin view: `?visitor.persona=payadmin`
+* Partner view: `?visitor.persona=partner`
 
 ## What changes
 

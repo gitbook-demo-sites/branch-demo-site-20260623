@@ -27,7 +27,7 @@ sequenceDiagram
 * Is there a known bank holiday, cutoff, funding, or employer-file delay?
 * Is the support response worker-facing, employer-facing, or both?
 
-{% if visitor.claims.unsigned.persona === "payadmin" %}
+{% if visitor.claims.persona === "payadmin" %}
 {% hint style="success" icon="clipboard-check" %}
 **Suggested PayAdmin response**
 
