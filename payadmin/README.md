@@ -17,6 +17,10 @@ PayAdmin is the employer and operations workspace for reviewing worker payouts, 
 {% hint style="info" icon="handshake-angle" %}
 **Partner mode enabled.** This view emphasizes integration handoffs, API-created payouts, webhook events, and platform support boundaries.
 {% endhint %}
+
+## Welcome Uber
+
+Use this partner view to show how Branch can tailor PayAdmin documentation for a specific enterprise partner, including partner-specific workflows, integration language, and support escalation paths.
 {% endif %}
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
