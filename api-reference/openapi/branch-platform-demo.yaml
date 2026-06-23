@@ -1,0 +1,231 @@
+openapi: 3.1.0
+info:
+  title: Branch Platform API Demo
+  version: 2026-06-01
+  description: Dummy API specification for a Branch GitBook demo. Not a production API contract.
+servers:
+  - url: https://sandbox.api.branchapp.example/v1
+    description: Sandbox
+  - url: https://api.branchapp.example/v1
+    description: Production
+security:
+  - bearerAuth: []
+tags:
+  - name: Workers
+  - name: Payouts
+  - name: Transfers
+  - name: Webhooks
+paths:
+  /workers:
+    post:
+      tags: [Workers]
+      summary: Create a worker
+      operationId: createWorker
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateWorkerRequest'
+      responses:
+        '201':
+          description: Worker created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Worker'
+    get:
+      tags: [Workers]
+      summary: List workers
+      operationId: listWorkers
+      responses:
+        '200':
+          description: Workers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Worker'
+  /workers/{workerId}:
+    get:
+      tags: [Workers]
+      summary: Retrieve a worker
+      operationId: getWorker
+      parameters:
+        - $ref: '#/components/parameters/WorkerId'
+      responses:
+        '200':
+          description: Worker
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Worker'
+  /payouts:
+    post:
+      tags: [Payouts]
+      summary: Create a payout
+      operationId: createPayout
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePayoutRequest'
+      responses:
+        '201':
+          description: Payout created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Payout'
+    get:
+      tags: [Payouts]
+      summary: List payouts
+      operationId: listPayouts
+      responses:
+        '200':
+          description: Payouts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Payout'
+  /payouts/{payoutId}:
+    get:
+      tags: [Payouts]
+      summary: Retrieve a payout
+      operationId: getPayout
+      parameters:
+        - $ref: '#/components/parameters/PayoutId'
+      responses:
+        '200':
+          description: Payout
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Payout'
+  /transfers:
+    get:
+      tags: [Transfers]
+      summary: List transfers
+      operationId: listTransfers
+      responses:
+        '200':
+          description: Transfers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Transfer'
+  /webhook-endpoints:
+    post:
+      tags: [Webhooks]
+      summary: Create a webhook endpoint
+      operationId: createWebhookEndpoint
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateWebhookEndpointRequest'
+      responses:
+        '201':
+          description: Webhook endpoint created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WebhookEndpoint'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  parameters:
+    WorkerId:
+      name: workerId
+      in: path
+      required: true
+      schema: { type: string }
+    PayoutId:
+      name: payoutId
+      in: path
+      required: true
+      schema: { type: string }
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: true
+      schema: { type: string }
+  schemas:
+    CreateWorkerRequest:
+      type: object
+      required: [externalId, firstName, lastName]
+      properties:
+        externalId: { type: string, example: worker_123 }
+        firstName: { type: string, example: Jordan }
+        lastName: { type: string, example: Lee }
+        phone: { type: string, example: '+15555550100' }
+        email: { type: string, format: email, example: jordan@example.com }
+    Worker:
+      type: object
+      required: [id, externalId, status]
+      properties:
+        id: { type: string, example: wrk_123 }
+        externalId: { type: string, example: worker_123 }
+        status: { type: string, enum: [active, pending, suspended] }
+    CreatePayoutRequest:
+      type: object
+      required: [workerId, amount, currency, reason]
+      properties:
+        workerId: { type: string, example: wrk_123 }
+        amount: { type: integer, example: 12500, description: Amount in cents. }
+        currency: { type: string, example: USD }
+        reason: { type: string, example: tips }
+        memo: { type: string, example: Friday close tips }
+    Payout:
+      type: object
+      required: [id, workerId, amount, currency, status]
+      properties:
+        id: { type: string, example: po_123 }
+        workerId: { type: string, example: wrk_123 }
+        amount: { type: integer, example: 12500 }
+        currency: { type: string, example: USD }
+        status: { type: string, enum: [created, processing, settled, failed, cancelled] }
+    Transfer:
+      type: object
+      properties:
+        id: { type: string, example: tr_123 }
+        payoutId: { type: string, example: po_123 }
+        status: { type: string, enum: [pending, sent, returned] }
+    CreateWebhookEndpointRequest:
+      type: object
+      required: [url, events]
+      properties:
+        url: { type: string, format: uri, example: https://partner.example.com/branch/webhooks }
+        events:
+          type: array
+          items:
+            type: string
+            enum: [payout.created, payout.failed, payout.settled, dispute.opened]
+    WebhookEndpoint:
+      type: object
+      properties:
+        id: { type: string, example: wh_123 }
+        url: { type: string, format: uri }
+        events:
+          type: array
+          items: { type: string }

@@ -1,0 +1,461 @@
+{
+  "org": "j6LaOllaL20qOd5KkCSP",
+  "site": "site_UfqHf",
+  "site_url": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/sites/site_UfqHf",
+  "spaces_plan": {
+    "HOME": {
+      "folder": "home",
+      "title": "Home",
+      "icon": "house",
+      "desc": "Evolve-style Branch entry point, persona toggles, AI prompts, and demo routing.",
+      "space_id": "K3WWqt0tqq3AuDvna6zZ",
+      "section_id": "sitesc_RVOMF"
+    },
+    "SUPPORT": {
+      "folder": "support-center",
+      "title": "Support Center",
+      "icon": "life-ring",
+      "desc": "Branch Help Center content for account, card, payout, transfer, advance, and dispute questions.",
+      "space_id": "IDJQAVl8qYTXytlalrU6",
+      "section_id": "sitesc_AEaBk",
+      "old_space_id": "kkjkgIz1N0htC4tMdw0L",
+      "old_section_id": "sitesc_Nxuia"
+    },
+    "PAYADMIN": {
+      "folder": "payadmin",
+      "title": "PayAdmin",
+      "icon": "user-gear",
+      "desc": "Adaptive employer/admin operations for payout review, support handoffs, controls, and escalation.",
+      "space_id": "ksPiMtClGKP4tXIPmW2O",
+      "section_id": "sitesc_hp3zB"
+    },
+    "API": {
+      "folder": "api-reference",
+      "title": "API Reference",
+      "icon": "code",
+      "desc": "Dummy OpenAPI-backed partner API reference for workers, payouts, transfers, and webhooks.",
+      "space_id": "B6kpkf125bYXSptQOGAX",
+      "section_id": "sitesc_BYL3l"
+    }
+  },
+  "created": {
+    "HOME": {
+      "object": "space",
+      "id": "K3WWqt0tqq3AuDvna6zZ",
+      "title": "Home",
+      "emoji": "1f4d5",
+      "visibility": "private",
+      "createdAt": "2026-06-23T12:35:44.448Z",
+      "updatedAt": "2026-06-23T12:35:44.392Z",
+      "editMode": "locked",
+      "internal_poweredByV2": true,
+      "internal_singleWebsocket": true,
+      "urls": {
+        "location": "/spaces/K3WWqt0tqq3AuDvna6zZ",
+        "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/K3WWqt0tqq3AuDvna6zZ/"
+      },
+      "organization": "j6LaOllaL20qOd5KkCSP",
+      "revision": "7vLXexWjNul2vlwkPLAY",
+      "defaultLevel": "inherit",
+      "comments": 0,
+      "changeRequests": 0,
+      "changeRequestsDraft": 0,
+      "changeRequestsOpen": 0,
+      "permissions": {
+        "view": true,
+        "access": true,
+        "admin": true,
+        "viewInviteLinks": true,
+        "edit": true,
+        "triggerGitSync": true,
+        "comment": true,
+        "merge": true,
+        "review": true,
+        "installIntegration": true
+      },
+      "mergeRules": {
+        "type": "inherit"
+      }
+    },
+    "HOME_section": {
+      "object": "site-section",
+      "id": "sitesc_RVOMF",
+      "icon": "house",
+      "title": "Home",
+      "path": "home",
+      "default": true,
+      "draft": false,
+      "siteSpaces": [
+        {
+          "object": "site-space",
+          "id": "sitesp_Slvej",
+          "path": "home",
+          "default": true,
+          "section": "sitesc_RVOMF",
+          "space": {
+            "object": "space",
+            "id": "K3WWqt0tqq3AuDvna6zZ",
+            "title": "Home",
+            "emoji": "1f4d5",
+            "visibility": "private",
+            "createdAt": "2026-06-23T12:35:44.448Z",
+            "updatedAt": "2026-06-23T12:35:44.392Z",
+            "editMode": "locked",
+            "internal_poweredByV2": true,
+            "internal_singleWebsocket": true,
+            "urls": {
+              "location": "/spaces/K3WWqt0tqq3AuDvna6zZ",
+              "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/K3WWqt0tqq3AuDvna6zZ/"
+            },
+            "organization": "j6LaOllaL20qOd5KkCSP",
+            "revision": "7vLXexWjNul2vlwkPLAY",
+            "defaultLevel": "inherit",
+            "comments": 0,
+            "changeRequests": 0,
+            "changeRequestsDraft": 0,
+            "changeRequestsOpen": 0,
+            "permissions": {
+              "view": true,
+              "access": true,
+              "admin": true,
+              "viewInviteLinks": true,
+              "edit": true,
+              "triggerGitSync": true,
+              "comment": true,
+              "merge": true,
+              "review": true,
+              "installIntegration": true
+            },
+            "mergeRules": {
+              "type": "inherit"
+            }
+          },
+          "title": "Home",
+          "draft": false,
+          "hasAdvancedCustomizationFeature": false,
+          "urls": {},
+          "hidden": false
+        }
+      ],
+      "urls": {}
+    },
+    "SUPPORT": {
+      "object": "space",
+      "id": "kkjkgIz1N0htC4tMdw0L",
+      "title": "Support Center",
+      "emoji": "1f3a8",
+      "visibility": "private",
+      "createdAt": "2026-06-23T12:35:47.075Z",
+      "updatedAt": "2026-06-23T12:35:47.040Z",
+      "editMode": "locked",
+      "internal_poweredByV2": true,
+      "internal_singleWebsocket": true,
+      "urls": {
+        "location": "/spaces/kkjkgIz1N0htC4tMdw0L",
+        "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/kkjkgIz1N0htC4tMdw0L/"
+      },
+      "organization": "j6LaOllaL20qOd5KkCSP",
+      "revision": "bBiP0g8CAUnHSpCCaXGR",
+      "defaultLevel": "inherit",
+      "comments": 0,
+      "changeRequests": 0,
+      "changeRequestsDraft": 0,
+      "changeRequestsOpen": 0,
+      "permissions": {
+        "view": true,
+        "access": true,
+        "admin": true,
+        "viewInviteLinks": true,
+        "edit": true,
+        "triggerGitSync": true,
+        "comment": true,
+        "merge": true,
+        "review": true,
+        "installIntegration": true
+      },
+      "mergeRules": {
+        "type": "inherit"
+      }
+    },
+    "SUPPORT_section": {
+      "object": "site-section",
+      "id": "sitesc_Nxuia",
+      "icon": "life-ring",
+      "title": "Support Center",
+      "path": "support-center",
+      "default": false,
+      "draft": false,
+      "siteSpaces": [
+        {
+          "object": "site-space",
+          "id": "sitesp_gf9vE",
+          "path": "support-center",
+          "default": true,
+          "section": "sitesc_Nxuia",
+          "space": {
+            "object": "space",
+            "id": "kkjkgIz1N0htC4tMdw0L",
+            "title": "Support Center",
+            "emoji": "1f3a8",
+            "visibility": "private",
+            "createdAt": "2026-06-23T12:35:47.075Z",
+            "updatedAt": "2026-06-23T12:35:47.040Z",
+            "editMode": "locked",
+            "internal_poweredByV2": true,
+            "internal_singleWebsocket": true,
+            "urls": {
+              "location": "/spaces/kkjkgIz1N0htC4tMdw0L",
+              "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/kkjkgIz1N0htC4tMdw0L/"
+            },
+            "organization": "j6LaOllaL20qOd5KkCSP",
+            "revision": "bBiP0g8CAUnHSpCCaXGR",
+            "defaultLevel": "inherit",
+            "comments": 0,
+            "changeRequests": 0,
+            "changeRequestsDraft": 0,
+            "changeRequestsOpen": 0,
+            "permissions": {
+              "view": true,
+              "access": true,
+              "admin": true,
+              "viewInviteLinks": true,
+              "edit": true,
+              "triggerGitSync": true,
+              "comment": true,
+              "merge": true,
+              "review": true,
+              "installIntegration": true
+            },
+            "mergeRules": {
+              "type": "inherit"
+            }
+          },
+          "title": "Support Center",
+          "draft": false,
+          "hasAdvancedCustomizationFeature": false,
+          "urls": {},
+          "hidden": false
+        }
+      ],
+      "urls": {}
+    },
+    "PAYADMIN": {
+      "object": "space",
+      "id": "ksPiMtClGKP4tXIPmW2O",
+      "title": "PayAdmin",
+      "emoji": "1f50f",
+      "visibility": "private",
+      "createdAt": "2026-06-23T12:35:50.135Z",
+      "updatedAt": "2026-06-23T12:35:50.081Z",
+      "editMode": "locked",
+      "internal_poweredByV2": true,
+      "internal_singleWebsocket": true,
+      "urls": {
+        "location": "/spaces/ksPiMtClGKP4tXIPmW2O",
+        "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/ksPiMtClGKP4tXIPmW2O/"
+      },
+      "organization": "j6LaOllaL20qOd5KkCSP",
+      "revision": "SmTynRnQXH77UcFORIyI",
+      "defaultLevel": "inherit",
+      "comments": 0,
+      "changeRequests": 0,
+      "changeRequestsDraft": 0,
+      "changeRequestsOpen": 0,
+      "permissions": {
+        "view": true,
+        "access": true,
+        "admin": true,
+        "viewInviteLinks": true,
+        "edit": true,
+        "triggerGitSync": true,
+        "comment": true,
+        "merge": true,
+        "review": true,
+        "installIntegration": true
+      },
+      "mergeRules": {
+        "type": "inherit"
+      }
+    },
+    "PAYADMIN_section": {
+      "object": "site-section",
+      "id": "sitesc_hp3zB",
+      "icon": "user-gear",
+      "title": "PayAdmin",
+      "path": "payadmin",
+      "default": false,
+      "draft": false,
+      "siteSpaces": [
+        {
+          "object": "site-space",
+          "id": "sitesp_zUSk9",
+          "path": "payadmin",
+          "default": true,
+          "section": "sitesc_hp3zB",
+          "space": {
+            "object": "space",
+            "id": "ksPiMtClGKP4tXIPmW2O",
+            "title": "PayAdmin",
+            "emoji": "1f50f",
+            "visibility": "private",
+            "createdAt": "2026-06-23T12:35:50.135Z",
+            "updatedAt": "2026-06-23T12:35:50.081Z",
+            "editMode": "locked",
+            "internal_poweredByV2": true,
+            "internal_singleWebsocket": true,
+            "urls": {
+              "location": "/spaces/ksPiMtClGKP4tXIPmW2O",
+              "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/ksPiMtClGKP4tXIPmW2O/"
+            },
+            "organization": "j6LaOllaL20qOd5KkCSP",
+            "revision": "SmTynRnQXH77UcFORIyI",
+            "defaultLevel": "inherit",
+            "comments": 0,
+            "changeRequests": 0,
+            "changeRequestsDraft": 0,
+            "changeRequestsOpen": 0,
+            "permissions": {
+              "view": true,
+              "access": true,
+              "admin": true,
+              "viewInviteLinks": true,
+              "edit": true,
+              "triggerGitSync": true,
+              "comment": true,
+              "merge": true,
+              "review": true,
+              "installIntegration": true
+            },
+            "mergeRules": {
+              "type": "inherit"
+            }
+          },
+          "title": "PayAdmin",
+          "draft": false,
+          "hasAdvancedCustomizationFeature": false,
+          "urls": {},
+          "hidden": false
+        }
+      ],
+      "urls": {}
+    },
+    "API": {
+      "object": "space",
+      "id": "B6kpkf125bYXSptQOGAX",
+      "title": "API Reference",
+      "emoji": "1f4da",
+      "visibility": "private",
+      "createdAt": "2026-06-23T12:35:54.222Z",
+      "updatedAt": "2026-06-23T12:35:54.175Z",
+      "editMode": "locked",
+      "internal_poweredByV2": true,
+      "internal_singleWebsocket": true,
+      "urls": {
+        "location": "/spaces/B6kpkf125bYXSptQOGAX",
+        "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/B6kpkf125bYXSptQOGAX/"
+      },
+      "organization": "j6LaOllaL20qOd5KkCSP",
+      "revision": "ZQuM0SSgoYzURMMJApNW",
+      "defaultLevel": "inherit",
+      "comments": 0,
+      "changeRequests": 0,
+      "changeRequestsDraft": 0,
+      "changeRequestsOpen": 0,
+      "permissions": {
+        "view": true,
+        "access": true,
+        "admin": true,
+        "viewInviteLinks": true,
+        "edit": true,
+        "triggerGitSync": true,
+        "comment": true,
+        "merge": true,
+        "review": true,
+        "installIntegration": true
+      },
+      "mergeRules": {
+        "type": "inherit"
+      }
+    },
+    "API_section": {
+      "object": "site-section",
+      "id": "sitesc_BYL3l",
+      "icon": "code",
+      "title": "API Reference",
+      "path": "api-reference",
+      "default": false,
+      "draft": false,
+      "siteSpaces": [
+        {
+          "object": "site-space",
+          "id": "sitesp_lLIOU",
+          "path": "api-reference",
+          "default": true,
+          "section": "sitesc_BYL3l",
+          "space": {
+            "object": "space",
+            "id": "B6kpkf125bYXSptQOGAX",
+            "title": "API Reference",
+            "emoji": "1f4da",
+            "visibility": "private",
+            "createdAt": "2026-06-23T12:35:54.222Z",
+            "updatedAt": "2026-06-23T12:35:54.175Z",
+            "editMode": "locked",
+            "internal_poweredByV2": true,
+            "internal_singleWebsocket": true,
+            "urls": {
+              "location": "/spaces/B6kpkf125bYXSptQOGAX",
+              "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/s/B6kpkf125bYXSptQOGAX/"
+            },
+            "organization": "j6LaOllaL20qOd5KkCSP",
+            "revision": "ZQuM0SSgoYzURMMJApNW",
+            "defaultLevel": "inherit",
+            "comments": 0,
+            "changeRequests": 0,
+            "changeRequestsDraft": 0,
+            "changeRequestsOpen": 0,
+            "permissions": {
+              "view": true,
+              "access": true,
+              "admin": true,
+              "viewInviteLinks": true,
+              "edit": true,
+              "triggerGitSync": true,
+              "comment": true,
+              "merge": true,
+              "review": true,
+              "installIntegration": true
+            },
+            "mergeRules": {
+              "type": "inherit"
+            }
+          },
+          "title": "API Reference",
+          "draft": false,
+          "hasAdvancedCustomizationFeature": false,
+          "urls": {},
+          "hidden": false
+        }
+      ],
+      "urls": {}
+    }
+  },
+  "openapi": {
+    "object": "openapi-spec",
+    "id": "oas_egAxG",
+    "createdAt": "2026-06-23T12:35:58.000Z",
+    "updatedAt": "2026-06-23T12:35:58.000Z",
+    "slug": "branch-platform-demo",
+    "processingState": "pending",
+    "visibility": "public",
+    "lastProcessedErrorCount": 0,
+    "permissions": {
+      "view": true,
+      "edit": true
+    },
+    "urls": {
+      "app": "https://app.gitbook.com/o/j6LaOllaL20qOd5KkCSP/openapi/branch-platform-demo",
+      "location": "/orgs/j6LaOllaL20qOd5KkCSP/openapi/branch-platform-demo"
+    }
+  }
+}
