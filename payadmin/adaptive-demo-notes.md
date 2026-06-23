@@ -7,7 +7,7 @@ icon: wand-magic-sparkles
 
 Use these URLs after the site is published:
 
-* Default view: no claims.
+* Default view: no claims. The page says `You're viewing as default audience.`
 * Worker view: `https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=worker`
 * PayAdmin view: `https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=payadmin`
 * Partner view: `https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=partner`

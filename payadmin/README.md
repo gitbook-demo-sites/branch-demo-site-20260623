@@ -7,6 +7,12 @@ icon: user-gear
 
 PayAdmin is the employer and operations workspace for reviewing worker payouts, resolving payment exceptions, managing workforce payment settings, and coordinating support handoffs.
 
+{% if !visitor.claims.unsigned.persona %}
+{% hint style="info" icon="users" %}
+You're viewing as default audience.
+{% endhint %}
+{% endif %}
+
 {% if visitor.claims.unsigned.persona === "payadmin" %}
 {% hint style="success" icon="user-gear" %}
 **Admin mode enabled.** This view adds operational runbooks, exception handling, funding status, audit trails, and role-based access guidance.

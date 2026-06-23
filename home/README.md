@@ -35,9 +35,11 @@ Branch delivers faster, more flexible options for businesses to pay their worker
 This Branch demo uses the public support portal as the customer-help source, adds a PayAdmin operator section, and includes an OpenAPI-backed dummy API reference for partner and embedded-finance conversations.
 
 {% if !visitor.claims.unsigned.persona %}
-Try a persona to see adaptive content in PayAdmin:
+<i class="fa-users" style="color:$info;">:users:</i> You're viewing as default audience.
 
-<a href="https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=worker" class="button secondary" data-icon="user">Worker</a> <a href="https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=payadmin" class="button secondary" data-icon="user-gear">PayAdmin</a> <a href="https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a>
+Switch to the partner view to see adaptive content in PayAdmin:
+
+<a href="https://branch.gitbook.io/branch-workforce-payments-demo/nbQSAvbYkMxWs2pWTy4d/?visitor.persona=partner" class="button secondary" data-icon="handshake-angle">Partner</a>
 {% endif %}
 
 {% if visitor.claims.unsigned.persona %}
